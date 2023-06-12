@@ -1,0 +1,51 @@
+.center2 {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.todo-task {
+  background-color: #f5f5f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.delete-button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #ff0000; /* Change the color to suit your design */
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #ff6666; /* Change the hover color to suit your design */
+}
+
+.container-2col {
+  display: flex;
+}
+
+.container-2col .left-column {
+  flex: 70%;
+}
+
+.container-2col .right-column {
+  flex: 30%;
+}
+
