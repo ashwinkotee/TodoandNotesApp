@@ -2,7 +2,9 @@
   background-color: brown;
 }
 
-
+.headline {
+    align-items: center;
+  }
 
 .center {
   margin: auto;
@@ -12,5 +14,4 @@
   justify-content: center;
   align-items: center;
   height: 20vh;
-}
 }

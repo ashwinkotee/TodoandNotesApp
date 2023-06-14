@@ -4,23 +4,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from 'react';
 
 export const Tasks = ({ oneTask, deleteTask, onUpdate }) => {
-  
+
 
   const handleDelete = (taskTitle) => {
     deleteTask(taskTitle)
   }
 
-  const handleUpdate = (taskTitle,event) => {
-    // const updatedContent = event.target.textContent;
+  const handleUpdate = (taskTitle, event) => {
     onUpdate(taskTitle, event);
   };
 
   
   return (
     <>
-      <div className="container-2col todo-task">
+      <div className="container-2col todo-task" style={{ marginTop: "10x"}}>
         <div className="left-column ">
-          <h2 contentEditable="true" onBlur={(e) => handleUpdate(oneTask.title,e)} className="todo-title" id="taskTitle" >{oneTask.title}</h2>
+          <h2 contentEditable="true" onBlur={(e) => handleUpdate(oneTask.title, e)} className="todo-title" id="taskTitle" >{oneTask.title}</h2>
         </div>
         <div className="right-column">
           <svg viewBox="0 0 1024 1024" fill="currentColor" height="2em" width="2em" onClick={() => handleDelete(oneTask.title)} >

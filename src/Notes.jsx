@@ -18,7 +18,7 @@ export const Notes = () =>{
     <div style={{ gridColumn: "span 12" }}>
       <div className="container">
         <div className="mb-3">
-          <textarea style={{ height: '300px' }} type="text" value={userNotes} className="form-control" id="notesInput" placeholder="Take notes." onChange={(e) => notesOnchange(e)} />
+          <textarea style={{ height: '300px' }} type="text" className="form-control" id="notesInput" placeholder="Take notes." onChange={(e) => notesOnchange(e)} />
         </div>
       </div>
     </div>
